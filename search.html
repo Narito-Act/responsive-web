@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <?php
+    // Check if the form has been submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve the search query from the form submission
+        $search_query = $_POST["search_box"];
+
+        // Perform the search operation based on $search_query
+        // Display search results here
+        echo "<p>Search results for: $search_query</p>";
+    }
+    ?>
+    !if u see this sir, di ko mapa gana yung search huhu na aambagel na ako T-T
+</body>
+</html>
